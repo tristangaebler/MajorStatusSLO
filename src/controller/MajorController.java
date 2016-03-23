@@ -32,7 +32,7 @@ public class MajorController
 	
 	private void showUserMajor()
 	{
-		if(userMajor.equals('C') || userMajor.equals('c'))
+		if(userMajor.equals("C") || userMajor.equals("c"))
 		{
 			userMajor = "Computer Science";
 		}

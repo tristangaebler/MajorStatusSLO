@@ -13,10 +13,9 @@ public class PopUpDisplay
 
 	public String grabAnswer(String userInput)
 	{
-		String answer = userInput;
 		
-		JOptionPane.showInputDialog(null, userInput);
+		userInput = JOptionPane.showInputDialog(null, userInput);
 		
-		return answer;
+		return userInput;
 	}
 }
