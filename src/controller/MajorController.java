@@ -6,10 +6,7 @@ public class MajorController
 {
 	private PopUpDisplay myPopUp;
 	private String userYear;
-	private String userMajor;
-	private String userFullMajor;
-	private String userFullYear;
-	
+	private String userMajor;	
 
 	public MajorController()
 	{
@@ -18,7 +15,7 @@ public class MajorController
 	
 	public void start()
 	{
-		String userInput = myPopUp.grabAnswer("Please type in the first letter of your major, and the number corresponding with your year. (C2) or (I4)");
+		String userInput = myPopUp.grabAnswer("Please type in the first letter of your major, and the number corresponding with your year. For example (C2) or (I4)");
 		userMajor = Character.toString(userInput.charAt(0));
 		userYear = Character.toString(userInput.charAt(1));
 		
@@ -52,11 +49,11 @@ public class MajorController
 	{
 		if(userYear.equals("1"))
 		{
-			userYear = "Freshmen";
+			userYear = "Freshman";
 		}
 		else if(userYear.equals("2"))
 		{
-			userYear = "Sophmore";
+			userYear = "Sophomore";
 		}
 		else if(userYear.equals("3"))	
 		{
@@ -64,7 +61,7 @@ public class MajorController
 		}
 		else if(userYear.equals("4"))
 		{
-			userYear = "Senoir";
+			userYear = "Senior";
 		} 
 		else
 		{
