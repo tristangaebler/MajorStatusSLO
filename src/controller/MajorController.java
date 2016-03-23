@@ -28,6 +28,18 @@ public class MajorController
 	{
 		if(userMajor.equals('C') || userMajor.equals('c'))
 		{
+			myPopUp.showResponse("Test ");
+		}
+		else if(userMajor.equals('M') || userMajor.equals('m'))
+		{
+			
+		}
+		else if(userMajor.equals('I') || userMajor.equals('i'))
+		{
+			
+		}
+		else
+		{
 			
 		}
 	}
