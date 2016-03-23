@@ -1,12 +1,10 @@
 package controller;
 
-import model.MajorStatus;
 import view.PopUpDisplay;
 
 public class MajorController
 {
 	private PopUpDisplay myPopUp;
-	private MajorStatus myMajor;
 	private String userYear;
 	private String userMajor;
 	private String userFullMajor;
@@ -36,11 +34,11 @@ public class MajorController
 		{
 			userMajor = "Computer Science";
 		}
-		else if(userMajor.equals('M') || userMajor.equals('m'))
+		else if(userMajor.equals("M") || userMajor.equals("m"))
 		{
 			userMajor = "Mathematics";
 		}
-		else if(userMajor.equals('I') || userMajor.equals('i'))
+		else if(userMajor.equals("I") || userMajor.equals("i"))
 		{
 			userMajor = "Information Technology";
 		}
@@ -52,19 +50,19 @@ public class MajorController
 	
 	private void showUserStatus()
 	{
-		if(userYear.equals('1'))
+		if(userYear.equals("1"))
 		{
 			userYear = "Freshmen";
 		}
-		else if(userYear.equals('2'))
+		else if(userYear.equals("2"))
 		{
 			userYear = "Sophmore";
 		}
-		else if(userYear.equals('3'))
+		else if(userYear.equals("3"))	
 		{
 			userFullYear = "Junoir";
 		}
-		else if(userYear.equals('4'))
+		else if(userYear.equals("4"))
 		{
 			userYear = "Senoir";
 		} 
