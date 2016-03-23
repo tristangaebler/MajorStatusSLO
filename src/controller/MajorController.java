@@ -24,7 +24,7 @@ public class MajorController
 		
 		showUserMajor();
 		showUserStatus();
-		myPopUp.showResponse("Your major is " + userMajor + " and your are a " + userFullYear);
+		myPopUp.showResponse("Your major is " + userMajor + " and your are a " + userYear);
 		
 	}
 	
@@ -60,7 +60,7 @@ public class MajorController
 		}
 		else if(userYear.equals("3"))	
 		{
-			userFullYear = "Junoir";
+			userYear = "Junoir";
 		}
 		else if(userYear.equals("4"))
 		{
