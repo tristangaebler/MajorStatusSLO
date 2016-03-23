@@ -22,6 +22,8 @@ public class MajorController
 		userMajor = userInput.substring(0, 0);
 		userYear = userInput.substring(1, 1);
 		
+		showUserMajor();
+		
 	}
 	
 	public void showUserMajor()
@@ -38,6 +40,30 @@ public class MajorController
 		{
 			
 		}
+		else
+		{
+			
+		}
+	}
+	
+	public void showUserStatus()
+	{
+		if(userYear.equals('1'))
+		{
+			myPopUp.showResponse("Test ");
+		}
+		else if(userYear.equals('2'))
+		{
+			
+		}
+		else if(userYear.equals('3'))
+		{
+			
+		}
+		else if(userYear.equals('4'))
+		{
+			
+		} 
 		else
 		{
 			
