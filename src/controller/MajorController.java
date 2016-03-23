@@ -21,42 +21,44 @@ public class MajorController
 	public void start()
 	{
 		String userInput = myPopUp.grabAnswer("Please type in the first letter of your major, and the number corresponding with your year. (C2) or (I4)");
-		userMajor = userInput.substring(0, 0);
-		userYear = userInput.substring(1, 1);
+		userMajor = Character.toString(userInput.charAt(0));
+		userYear = Character.toString(userInput.charAt(1));
 		
 		showUserMajor();
+		showUserStatus();
+		myPopUp.showResponse("Your major is " + userMajor + " and your are a " + userFullYear);
 		
 	}
 	
-	public void showUserMajor()
+	private void showUserMajor()
 	{
 		if(userMajor.equals('C') || userMajor.equals('c'))
 		{
-			userFullMajor = "Computer Science";
+			userMajor = "Computer Science";
 		}
 		else if(userMajor.equals('M') || userMajor.equals('m'))
 		{
-			userFullMajor = "Mathematics";
+			userMajor = "Mathematics";
 		}
 		else if(userMajor.equals('I') || userMajor.equals('i'))
 		{
-			userFullMajor = "Information Technology";
+			userMajor = "Information Technology";
 		}
 		else
 		{
-			userFullMajor = "Error: Major Not Found";
+			userMajor = "Error: Major Not Found";
 		}
 	}
 	
-	public void showUserStatus()
+	private void showUserStatus()
 	{
 		if(userYear.equals('1'))
 		{
-			userFullYear = "Freshmen";
+			userYear = "Freshmen";
 		}
 		else if(userYear.equals('2'))
 		{
-			userFullYear = "Sophmore";
+			userYear = "Sophmore";
 		}
 		else if(userYear.equals('3'))
 		{
@@ -64,11 +66,11 @@ public class MajorController
 		}
 		else if(userYear.equals('4'))
 		{
-			userFullYear = "Senoir";
+			userYear = "Senoir";
 		} 
 		else
 		{
-			userFullYear = "Error: Year not found";
+			userYear = "Error: Year not found";
 		}
 	}
 }

@@ -11,11 +11,11 @@ public class PopUpDisplay
 	}
 	
 
-	public String grabAnswer(String stuff)
+	public String grabAnswer(String userInput)
 	{
-		String answer = "";
+		String answer = userInput;
 		
-		JOptionPane.showInputDialog(null, stuff);
+		JOptionPane.showInputDialog(null, userInput);
 		
 		return answer;
 	}
